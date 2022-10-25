@@ -1,23 +1,22 @@
 .grid {
+  color: white;
   display: grid;
   grid-template-columns: repeat(4, 200px);
-  grid-template-rows: 100px repeat(2, 200px) 100px;
+  grid-template-rows: repeat(4, 100px);
   gap: 10px;
+  place-items: end center;
+  justify-items: center;
+  align-items: center;
 }
 .header {
   background-color: #2ecc71;
-  grid-column: span 4;
 }
 .content {
   background-color: #3498db;
-  grid-column: 1 / span 3;
-  grid-row: 2 / span 2;
 }
 .nav {
   background-color: #8e44ad;
-  grid-row: 2 / -2;
 }
 .footer {
   background-color: #f39c12;
-  grid-column: span 4;
 }
