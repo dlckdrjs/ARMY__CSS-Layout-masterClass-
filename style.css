@@ -1,8 +1,8 @@
 .grid {
   color: white;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
-  grid-template-rows: repeat(4, 100px);
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
   gap: 10px;
 }
 
@@ -11,4 +11,11 @@
 }
 .items:nth-child(even) {
   background-color: #3498db;
+}
+
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.grid:last-child {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
